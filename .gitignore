@@ -1,0 +1,20 @@
+# Credenciais e configurações locais
+.env
+.env.local
+.env.*.local
+
+# Dependências e arquivos gerados
+node_modules/
+.pnpm-store/
+coverage/
+*.log
+npm-debug.log*
+
+# Dados locais e arquivos temporários (a fonte oficial é o Supabase)
+data/*.json
+work/
+
+# Arquivos do sistema e editor
+.DS_Store
+Thumbs.db
+.vscode/

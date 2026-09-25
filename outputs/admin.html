@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8f7fa"><title>Administração | UnyxChat.AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin.css"><link rel="stylesheet" href="/admin-view.css">
+</head>
+<body>
+  <div class="layout admin-view">
+    <aside class="sidebar"><a class="brand" href="/admin"><span class="brand-mark">u</span>UnyxChat<span class="brand-ai">.AI</span></a><span class="workspace-label">PAINEL ADMINISTRATIVO</span><nav aria-label="Menu principal"><a href="/admin" data-admin-link="overview"><span aria-hidden="true">⌂</span> Visão geral</a><a href="/admin/empresas" data-admin-link="companies"><span aria-hidden="true">▣</span> Empresas clientes</a></nav><div class="sidebar-bottom"><div class="admin-indicator"><span></span> Administração global</div><p>Acompanhe cada empresa e<br>o ritmo da sua operação.</p><button id="logout" class="logout" type="button">Sair do painel</button></div></aside>
+    <main>
+      <header class="topbar"><div class="breadcrumb">UnyxChat.AI <span>/</span> Administração</div><div class="account"><div class="avatar">—</div><div><strong>Administrador</strong><small id="account-email">Carregando conta...</small></div></div></header>
+      <section class="page-heading"><div><div class="eyebrow">VISÃO ADMINISTRATIVA</div><h1>Empresas em uma só visão.</h1><p>Acompanhe a base de clientes, os atendimentos e as informações de cada operação.</p></div><a class="primary view-companies" href="#companies">Ver empresas <span>↓</span></a></section>
+      <div id="notice" class="notice" role="alert" hidden></div>
+      <section class="metrics" aria-label="Indicadores gerais"><article><div class="metric-label">Empresas clientes <span class="metric-icon purple">▤</span></div><strong id="metric-total">—</strong><small>Empresas na sua base</small></article><article><div class="metric-label">Operações ativas <span class="metric-icon green">↗</span></div><strong id="metric-active">—</strong><small id="active-note">Operações disponíveis</small></article><article><div class="metric-label">Clientes atendidos <span class="metric-icon pink">♧</span></div><strong id="metric-customers">—</strong><small>Cadastros das empresas</small></article><article><div class="metric-label">Agendamentos <span class="metric-icon orange">▣</span></div><strong id="metric-appointments">—</strong><small>Registros de todo o período</small></article></section>
+      <section class="overview"><div><span class="eyebrow">SUA BASE, MAIS PERTO</span><h2>Informação clara para<br>acompanhar cada cliente.</h2><p>Abra uma empresa para consultar seus dados,<br>serviços, equipe e últimos atendimentos.</p><a href="#companies">Explorar empresas <span>↓</span></a></div><div class="overview-card"><div class="overview-title"><span class="pulse"></span> Panorama da base</div><div><span>Empresas com acesso</span><strong id="linked-count">—</strong></div><div><span>Empresas sem acesso vinculado</span><strong id="pending-count">—</strong></div><small>Os dados abaixo são somente para consulta nesta versão.</small></div></section>
+      <section class="companies-panel" id="companies"><div class="section-heading"><div><h2>Empresas clientes <span id="company-count" class="count">—</span></h2><p>Selecione uma empresa para visualizar os dados de sua operação.</p></div><button class="secondary" id="refresh" type="button">↻ Atualizar</button></div><div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar por nome, segmento, e-mail ou código" aria-label="Buscar empresas"></label><label class="filter">Status <select id="status-filter"><option value="all">Todos os status</option><option value="active">Ativas</option><option value="inactive">Inativas</option></select></label></div><div class="table-scroll"><table><thead><tr><th>Empresa</th><th>Status</th><th>Clientes</th><th>Agendamentos</th><th>Acesso</th><th>Última atividade</th><th><span class="sr-only">Visualizar</span></th></tr></thead><tbody id="company-rows"><tr><td colspan="7" class="empty">Carregando empresas...</td></tr></tbody></table></div><div class="table-footer"><span id="results" role="status">Consultando sua base...</span><span>Dados de todo o período</span></div></section>
+      <footer class="page-footer">UnyxChat.AI <span>Mais conexões. Mais possibilidades.</span></footer>
+    </main>
+  </div>
+  <dialog id="company-detail" class="company-detail" aria-labelledby="detail-title"><div class="dialog-heading"><div><span class="eyebrow">VISÃO DA EMPRESA</span><h2 id="detail-title">Carregando...</h2><p id="detail-subtitle"></p></div><button class="close" type="button" data-close-detail aria-label="Fechar visualização">×</button></div><div id="detail-content" class="detail-content"><p class="empty">Carregando informações...</p></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="/admin.js"></script>
+</body>
+</html>

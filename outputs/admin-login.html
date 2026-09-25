@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administração | UnyxChat.AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--orange:#ffa731;--pink:#ff3d9a;--purple:#ca00cc;--ink:#111019;--muted:#747487;--line:#e8e8ee}*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);font-family:"DM Sans",sans-serif;background:#f7f7fa}.login{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr}.intro{background:#100b14;color:#fff;padding:clamp(34px,7vw,100px);display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.intro:before{content:"";position:absolute;width:520px;height:520px;right:-260px;top:-260px;border-radius:50%;background:radial-gradient(circle,#ca00cc 0%,#ff3d9a55 40%,transparent 70%)}.intro:after{content:"";position:absolute;width:500px;height:300px;left:-240px;bottom:-190px;border-radius:50%;background:radial-gradient(circle,#ff8b20a8 0%,#ff3d9a33 38%,transparent 70%)}.brand{display:flex;align-items:center;gap:11px;z-index:1;font:700 23px Outfit}.brand-mark{width:35px;height:35px;border-radius:12px;background:linear-gradient(135deg,var(--orange),var(--pink) 52%,var(--purple));position:relative}.brand-mark:after{content:"";position:absolute;width:14px;height:9px;border:2px solid #fff;border-radius:7px;left:9px;top:10px}.brand span{background:linear-gradient(90deg,#fff,#ff85c8,#d750ff);-webkit-background-clip:text;background-clip:text;color:transparent}.intro-copy{z-index:1;max-width:470px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:#ffbb75}.intro h1{font:600 clamp(38px,4.5vw,62px)/1.04 Outfit;margin:19px 0}.intro p{font-size:16px;line-height:1.6;color:#ded2e4;max-width:400px;margin:0}.security{z-index:1;display:flex;gap:10px;align-items:center;color:#d9cedf;font-size:12px}.shield{width:31px;height:31px;display:grid;place-items:center;border:1px solid #ffffff33;border-radius:9px;background:#ffffff0e}.form-side{display:grid;place-items:center;padding:30px}.card{width:min(100%,430px);background:#fff;border:1px solid var(--line);border-radius:22px;padding:38px;box-shadow:0 16px 48px #24202a0d}.card h2{font:600 28px Outfit;margin:0 0 8px}.subtitle{font-size:13px;line-height:1.5;color:var(--muted);margin:0 0 27px}.field{display:grid;gap:7px;margin-top:16px}.field label{font-size:12px;font-weight:700;color:#3d3b47}.input-wrap{position:relative}.input-wrap svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:17px;height:17px;fill:none;stroke:#858394;stroke-width:1.8}.field input{width:100%;border:1px solid #dedee6;border-radius:11px;padding:12px 13px 12px 40px;font:14px "DM Sans";outline:0;transition:.18s}.field input:focus{border-color:#bf4bd0;box-shadow:0 0 0 4px #ca00cc12}.password-toggle{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:0;background:transparent;width:32px;height:32px;color:#747080;cursor:pointer}.password-toggle svg{position:static;transform:none;color:currentColor}.login-button{width:100%;border:0;border-radius:11px;padding:13px;margin-top:25px;background:linear-gradient(90deg,var(--orange),var(--pink),var(--purple));color:#fff;font:700 14px "DM Sans";cursor:pointer;box-shadow:0 10px 20px #ca00cc24;transition:.18s}.login-button:hover{transform:translateY(-1px);filter:brightness(1.03)}.login-button:disabled{cursor:wait;opacity:.7;transform:none}.message{min-height:18px;margin:13px 0 0;color:#bd3158;font-size:12px;text-align:center}.privacy{font-size:11px;line-height:1.55;color:#8a8895;text-align:center;margin:24px 0 0}.privacy b{color:#5c5868}@media(max-width:800px){.login{grid-template-columns:1fr}.intro{min-height:255px;padding:30px}.intro-copy{margin-top:35px}.intro h1{font-size:33px;margin:12px 0}.intro p,.security{display:none}.form-side{padding:24px 15px}.card{padding:29px 23px}}
+  </style>
+  <style>
+    @media(max-width:800px){body{min-height:100dvh}.intro{min-height:220px}.form-side{padding:22px 16px calc(24px + env(safe-area-inset-bottom))}}
+    @media(max-width:480px){
+      body{background:#fff}.login{display:flex;flex-direction:column;min-height:100dvh;background:#fff}
+      .intro{min-height:226px;padding:24px 22px 22px;justify-content:space-between;background:radial-gradient(circle at 92% 3%,#d000cc 0%,#9d137c 24%,transparent 45%),linear-gradient(140deg,#100b14 40%,#1a0d20 100%)}
+      .intro:before{width:270px;height:270px;right:-145px;top:-145px}.intro:after{width:260px;height:120px;left:-120px;bottom:-85px}
+      .brand{font-size:20px}.brand-mark{width:32px;height:32px}.brand-mark:after{left:8px;top:9px}
+      .intro-copy{margin:0}.eyebrow{font-size:9px;letter-spacing:1.5px}.intro h1{font-size:29px;line-height:1.08;margin:8px 0 0;max-width:290px}
+      .form-side{display:block;padding:28px 22px calc(28px + env(safe-area-inset-bottom));background:#fff}
+      .card{width:100%;padding:0;border:0;border-radius:0;box-shadow:none}.card h2{font-size:26px;margin-bottom:7px}.subtitle{font-size:13px;margin-bottom:28px}
+      .field{gap:8px;margin-top:18px}.field label{font-size:12px}.field input{min-height:52px;padding-left:42px;font-size:16px;border-radius:12px;background:#fbfbfd}
+      .input-wrap svg{left:14px}.password-toggle{width:46px;height:46px;right:4px}.login-button{min-height:52px;margin-top:28px;border-radius:12px;font-size:15px}
+      .privacy{margin-top:28px;font-size:11px}.message{margin-top:12px}
+    }
+  </style>
+</head>
+<body data-login-scope="admin">
+  <main class="login">
+    <section class="intro" aria-label="Apresentação UnyxChat.AI">
+      <div class="brand"><div class="brand-mark" aria-hidden="true"></div><span>UnyxChat.AI</span></div>
+      <div class="intro-copy"><div class="eyebrow">ADMINISTRAÇÃO UNYXCHAT</div><h1>Sua operação, em um só lugar.</h1><p>Gerencie as empresas clientes, os cadastros e as configurações da UnyxChat.</p></div>
+      <div class="security"><div class="shield" aria-hidden="true">⌾</div><span>Acesso restrito à equipe administrativa.</span></div>
+    </section>
+    <section class="form-side"><form class="card" id="login-form"><h2>Painel administrativo</h2><p class="subtitle">Entre com sua conta autorizada para acessar a administração.</p><div class="field"><label for="email">E-mail</label><div class="input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com" required></div></div><div class="field"><label for="password">Senha</label><div class="input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Sua senha" minlength="8" required><button class="password-toggle" type="button" aria-label="Mostrar senha"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3-5 9-5 9 5 9 5-3 5-9 5-9-5-9-5Z"/><circle cx="12" cy="12" r="2.5"/></svg></button></div></div><button class="login-button" type="submit">Entrar na administração</button><p class="message" role="alert" aria-live="polite"></p><p class="privacy"><b>Seu acesso é protegido.</b><br>Não armazenamos sua senha no painel.</p></form></section>
+  </main>
+  <script src="/login.js"></script>
+</body>
+</html>
